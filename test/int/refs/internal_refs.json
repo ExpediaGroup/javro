@@ -1,0 +1,19 @@
+{
+  "type": "object",
+
+  "definitions": {
+    "definedString": {
+      "type": "string"
+    }
+  },
+
+  "properties": {
+    "optionalInternalStringRef": {
+      "$ref": "#/definitions/definedString"
+    },
+    "requiredInternalStringRef": {
+      "$ref": "#/definitions/definedString"
+    }
+  },
+  "required": ["requiredInternalStringRef"]
+}

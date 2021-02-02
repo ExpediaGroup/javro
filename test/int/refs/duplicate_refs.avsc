@@ -1,0 +1,23 @@
+{
+  "type": "record",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "duplicate_refs",
+  "fields": [
+    { "name": "bar", "type": {
+      "namespace": "test.jsonschema.to.avro.namespace.duplicate_refsPackage",
+      "name": "bar",
+      "type": "record",
+      "fields": [
+        { "name": "hello", "type": "string" }
+      ]
+    }},
+    { "name": "foo", "type": {
+      "namespace": "test.jsonschema.to.avro.namespace.duplicate_refsPackage",
+      "name": "foo",
+      "type": "record",
+      "fields": [
+        { "name": "hello", "type": "string" }
+      ]
+    }}
+  ]
+}

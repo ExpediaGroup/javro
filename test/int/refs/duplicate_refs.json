@@ -1,0 +1,24 @@
+{
+  "type": "object",
+
+  "definitions": {
+    "sharedObject": {
+      "title": "sharedObject",
+      "type": "object",
+      "properties": {
+        "hello": { "type": "string" }
+      },
+      "required": ["hello"]
+    }
+  },
+
+  "properties": {
+    "foo": {
+      "$ref": "#/definitions/sharedObject"
+    },
+    "bar": {
+      "$ref": "#/definitions/sharedObject"
+    }
+  },
+  "required": ["foo", "bar"]
+}

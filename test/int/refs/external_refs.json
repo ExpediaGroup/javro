@@ -1,0 +1,13 @@
+{
+  "type": "object",
+
+  "properties": {
+    "referenceToTopLevelObject": {
+      "$ref": "./internal_refs.json"
+    },
+    "referenceToStringDefinition": {
+      "$ref": "./internal_refs.json#/definitions/definedString"
+    }
+  },
+  "required": ["referenceToTopLevelObject", "referenceToStringDefinition"]
+}

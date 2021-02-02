@@ -1,0 +1,39 @@
+{
+  "type": "object",
+
+  "properties": {
+    "string": {
+      "type": "string"
+    },
+    "object": {
+      "type": "object",
+      "properties": {
+        "string": {
+          "type": "string"
+        },
+        "foo": {
+          "type": "string"
+        },
+        "object": {
+          "type": "object",
+          "properties": {
+            "string": {
+              "type": "string"
+            },
+            "bar": {
+              "type": "string"
+            },
+            "object": {
+              "type": "object",
+              "properties": {
+                "string": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "record",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "internal_refs",
+  "fields": [
+    { "name": "optionalInternalStringRef", "type": ["null", "string"], "default": null },
+    { "name": "requiredInternalStringRef", "type": "string" }
+  ]
+}

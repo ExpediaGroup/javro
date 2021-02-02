@@ -1,0 +1,49 @@
+{
+  "title": "nested_objects",
+  "type": "object",
+
+  "properties": {
+    "foo": {
+      "type": "string"
+    },
+    "bar": {
+      "type": "string"
+    },
+    "object": {
+      "type": "object",
+      "properties": {
+        "foo": {
+          "type": "string"
+        },
+        "bar": {
+          "type": "string"
+        },
+        "object": {
+          "type": "object",
+          "properties": {
+            "foo": {
+              "type": "string"
+            },
+            "bar": {
+              "type": "string"
+            },
+            "object": {
+              "type": "object",
+              "properties": {
+                "foo": {
+                  "type": "string"
+                },
+                "bar": {
+                  "type": "string"
+                },
+                "string": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

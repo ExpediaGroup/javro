@@ -1,0 +1,23 @@
+{
+  "type": "object",
+  "properties": {
+    "enum_string": {
+      "type": "string",
+      "enum": ["HELLO", "ENUM"]
+    },
+    "enum_integer": {
+      "type": "integer",
+      "enum": [0, 1]
+    },
+    "enum_number": {
+      "type": "number",
+      "enum": [199999.45, 199999.47]
+    },
+    "enum_boolean": {
+      "type": "boolean",
+      "enum": [true, false]
+    }
+  },
+  "required": ["enum_string"],
+  "additionalProperties": false
+}

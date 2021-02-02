@@ -1,0 +1,49 @@
+{
+  "type": "record",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "nested_objects",
+  "fields": [
+    {
+      "name": "object",
+      "type": ["null", {
+        "namespace": "test.jsonschema.to.avro.namespace.nested_objectsPackage",
+        "name": "object",
+        "type": "record",
+        "fields": [
+          { "name": "foo", "type": ["null", "string"], "default": null },
+          {
+            "name": "object",
+            "type": ["null", {
+              "namespace": "test.jsonschema.to.avro.namespace.nested_objectsPackage.objectPackage",
+              "name": "object",
+              "type": "record",
+              "fields": [
+                { "name": "bar", "type": ["null", "string"], "default": null },
+                {
+                  "name": "object",
+                  "type": ["null", {
+                    "namespace": "test.jsonschema.to.avro.namespace.nested_objectsPackage.objectPackage.objectPackage",
+                    "name": "object",
+                    "type": "record",
+                    "fields": [
+                      { "name": "string", "type": ["null", "string"], "default": null },
+                      { "name": "bar", "type": ["null", "string"], "default": null },
+                      { "name": "foo", "type": ["null", "string"], "default": null }
+                    ]
+                  }],
+                  "default": null
+                },
+                { "name": "foo", "type": ["null", "string"], "default": null }
+              ]
+            }],
+            "default": null
+          },
+          { "name": "bar", "type": ["null", "string"], "default": null }
+        ]
+      }],
+      "default": null
+    },
+    { "name": "bar", "type": ["null", "string"], "default": null },
+    { "name": "foo", "type": ["null", "string"], "default": null }
+  ]
+}

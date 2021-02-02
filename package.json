@@ -1,0 +1,31 @@
+{
+  "name": "javro",
+  "version": "2.0.0",
+  "description": "Converts JSON Schema definitions to Avro Schema definitions",
+  "main": "./src/javro.js",
+  "scripts": {
+    "test": "eslint ./src/**/*.js ./test/**/*.js && jest --testPathIgnorePatterns ./test/**/schema-registry ./test/**/schema-registry-avro-fetcher"
+  },
+  "author": {
+    "name": "Expedia Group",
+    "email": "oss@expediagroup.com"
+  },
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "ajv": "^6.10.2",
+    "avsc": "^5.4.12",
+    "docker-compose": "^0.19.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-header": "^3.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.13.6",
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "json-schema-ref-parser": "^7.1.0",
+    "promise": "^8.0.3",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
+  }
+}

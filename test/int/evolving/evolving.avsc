@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "primitives",
+  "fields": [
+    { "name": "boolean", "type": ["null", "boolean"], "default": null },
+    { "name": "integer", "type": ["null", "long"], "default": null },
+    { "name": "number", "type": ["null", "double"], "default": null },
+    { "name": "string", "type": ["null", "string"], "default": null },
+    { "name": "bar", "type": ["null", "double"], "default": null },
+    { "name": "foo", "type": ["null", "string"], "default": null }
+  ]
+}

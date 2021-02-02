@@ -1,0 +1,8 @@
+{
+  "type": "record",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "TitledSchema",
+  "fields": [
+    { "name": "foo", "type": ["null", "string"], "default": null }
+  ]
+}

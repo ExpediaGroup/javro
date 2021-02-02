@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "external_refs",
+  "fields": [
+    { "name": "referenceToStringDefinition", "type": "string" },
+    { "name": "referenceToTopLevelObject", "type": {
+      "namespace": "test.jsonschema.to.avro.namespace.external_refsPackage",
+      "name": "referenceToTopLevelObject",
+      "type": "record",
+      "fields": [
+        { "name": "optionalInternalStringRef", "type": ["null", "string"], "default": null },
+        { "name": "requiredInternalStringRef", "type": "string" }
+      ]
+    }}
+  ]
+}

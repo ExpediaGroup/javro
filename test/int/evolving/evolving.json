@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+
+  "title": "primitives",
+  "type": "object",
+
+  "properties": {
+    "foo": {
+      "type": "string"
+    },
+    "string": {
+      "type": "string"
+    },
+    "number": {
+      "type": "number"
+    },
+    "bar": {
+      "type": "number"
+    },
+    "integer": {
+      "type": "integer"
+    },
+    "boolean": {
+      "type": "boolean"
+    }
+  }
+}

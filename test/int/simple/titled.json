@@ -1,0 +1,10 @@
+{
+  "title": "TitledSchema",
+  "type": "object",
+
+  "properties": {
+    "foo": {
+      "type": "string"
+    }
+  }
+}

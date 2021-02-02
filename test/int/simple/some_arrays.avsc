@@ -1,0 +1,71 @@
+{
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "name": "some_arrays",
+  "type": "record",
+  "fields": [
+    {
+      "name": "optionalArrayOfObjects",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "namespace": "test.jsonschema.to.avro.namespace.some_arraysPackage",
+            "name": "optionalArrayOfObjects",
+            "type": "record",
+            "fields": [
+              {
+                "name": "string",
+                "type": [
+                  "null",
+                  "string"
+                ],
+                "default": null
+              }
+            ]
+          }
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "optionalArrayOfStrings",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "string"
+        }
+      ],
+      "default": null
+    },
+    {
+      "name": "requiredArrayOfBooleans",
+      "type": {
+        "type": "array",
+        "items": "boolean"
+      }
+    },
+    {
+      "name": "requiredArrayOfObjects",
+      "type": {
+        "type": "array",
+        "items": {
+          "namespace": "test.jsonschema.to.avro.namespace.some_arraysPackage",
+          "name": "requiredArrayOfObjects",
+          "type": "record",
+          "fields": [
+            {
+              "name": "string",
+              "type": [
+                "null",
+                "string"
+              ],
+              "default": null
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

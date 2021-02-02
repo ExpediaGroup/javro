@@ -1,0 +1,35 @@
+{
+  "fields": [
+    {
+      "default": null,
+      "name": "enum_boolean",
+      "type": [
+        "null",
+        "boolean"
+      ]
+    },
+    {
+      "default": null,
+      "name": "enum_integer",
+      "type": [
+        "null",
+        "long"
+      ]
+    },
+    {
+      "default": null,
+      "name": "enum_number",
+      "type": [
+        "null",
+        "double"
+      ]
+    },
+    {
+      "name": "enum_string",
+      "type": "string"
+    }
+  ],
+  "name": "some_enum",
+  "namespace": "test.jsonschema.to.avro.namespace",
+  "type": "record"
+}

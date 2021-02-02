@@ -1,0 +1,1 @@
+{"schema": "{\"type\":\"record\",\"name\":\"PageView\",\"namespace\":\"com.avro.kafka.sample.event.schema\",\"fields\":[{\"name\":\"pageId\",\"type\":[\"null\",\"string\"]},{\"name\":\"title\",\"type\":[\"null\",\"string\"]},{\"name\":\"id\",\"type\":[\"null\",\"int\"]}]}"}
