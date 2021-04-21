@@ -133,4 +133,4 @@ Pull requests are welcome. Please refer to our [CONTRIBUTING](./CONTRIBUTING.md)
 
 This project is available under the [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html).
 
-Copyright 2019 Expedia, Inc.
+Copyright 2019-2021 Expedia, Inc.
