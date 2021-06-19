@@ -22,7 +22,7 @@ const $RefParser = require('json-schema-ref-parser');
 const { javro } = require('../../src/javro');
 
 module.exports = function javroWithValidation(expectedAvroFile, options) {
-  const deReferencedSchema = $RefParser.dereference(options.jsonSchemaFile);
+  const deReferencedSchema = $RefParser.dereference(options.jsonSchemaFile, options.jsonSchema);
   const actualAvro = javro(options);
   const expectedAvro = fs.readFile(expectedAvroFile, { encoding: 'UTF-8' });
 

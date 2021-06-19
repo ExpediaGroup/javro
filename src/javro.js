@@ -45,7 +45,7 @@ function fetchAvroCompatibility(options, res) {
 }
 
 function resolveReferencesAndTurnIntoAvro(options) {
-  return resolveReferences(options.jsonSchemaFile).then((resolvedJson) => {
+  return resolveReferences(options.jsonSchemaFile, options.jsonSchema).then((resolvedJson) => {
     const newAvsc = new JsonSchemaToAvro(resolvedJson, options.allowMultipleTypes || false)
       .mapObjectToRecord(options.namespace, grabAvroName(options.jsonSchemaFile, resolvedJson));
     return fetchCorrespondingAvro(resolvedJson, options).then((oldAvsc) => {

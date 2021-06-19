@@ -75,6 +75,9 @@ const { jvro, SchemaRegistryAvroFetcher } = require('javro');
 javro({
   // The location of your JSON Schema
   jsonSchemaFile: '/path/to/your/jsonSchemaFile.json',
+
+  // A JSON schema object. This object will be used instead of reading from `jsonSchemaFile`.
+  jsonSchema: jsonSchemaObject,
   
   // The 'namespace' used in the generated AVSC - the 'name' will be taken either from the 'title' in the JSON Schema or
   // the file name if 'title' isn't present (in this case that would be 'jsonSchemaFile')
