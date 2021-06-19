@@ -16,6 +16,6 @@
 
 const $RefParser = require('json-schema-ref-parser');
 
-module.exports = function resolveReferences(jsonSchemaUrl) {
-  return $RefParser.dereference(jsonSchemaUrl);
+module.exports = function resolveReferences(jsonSchemaUrl, jsonSchema) {
+  return $RefParser.dereference(jsonSchemaUrl, jsonSchema);
 };

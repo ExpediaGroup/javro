@@ -15,6 +15,7 @@
  */
 
 const path = require('path');
+const fs = require('fs');
 const javroWithValidation = require('../../utils/javro-with-validation');
 
 test('primitive types', () => javroWithValidation(path.resolve(__dirname, './primitives.avsc'), {
@@ -55,6 +56,14 @@ test('arrays', () => javroWithValidation(path.resolve(__dirname, './some_arrays.
 
 test('enum', () => javroWithValidation(path.resolve(__dirname, './some_enum.avsc'), {
   jsonSchemaFile: path.resolve(__dirname, './some_enum.json'),
+  namespace: 'test.jsonschema.to.avro.namespace',
+}).then((res) => {
+  expect(res.actualAvro).toStrictEqual(res.expectedAvro);
+}));
+
+test('with jsonSchema', () => javroWithValidation(path.resolve(__dirname, './some_enum.avsc'), {
+  jsonSchemaFile: path.resolve(__dirname, './some_enum.json'),
+  jsonSchema: fs.readFileSync(path.resolve(__dirname, './some_enum.json')),
   namespace: 'test.jsonschema.to.avro.namespace',
 }).then((res) => {
   expect(res.actualAvro).toStrictEqual(res.expectedAvro);
